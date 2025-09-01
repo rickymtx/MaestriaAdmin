@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productividad</title>
+    <!-- Enlace de Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesProductividad.css">
+</head>
+
+<body>
+    <script type="module" src="config1.js"></script>
+
+    <!-- Navbar de Gobierno de México -->
+    <nav class="navbarGobierno">
+        <a href="https://www.gob.mx/" class="logo-link" target="_blank" rel="noopener noreferrer">
+            <img src="images/GobiernoMexico.svg" alt="Logo" class="logo">
+        </a>
+        <input type="checkbox" id="menu-toggleGobierno">
+        <label for="menu-toggleGobierno" class="menu-iconGobierno">
+            <div class="lineGobierno"></div>
+            <div class="lineGobierno"></div>
+            <div class="lineGobierno"></div>
+        </label>
+
+        <ul class="nav-linksGobierno">
+            <li><a href="https://www.gob.mx/tramites/" target="_blank" rel="noopener noreferrer">Trámites</a></li>
+            <li><a href="https://www.gob.mx/gobierno" target="_blank" rel="noopener noreferrer">Gobierno</a></li>
+            <li><a href="https://www.gob.mx/busqueda" class="link" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 15px;"></i>
+                </a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Sección de Logos Oficiales -->
+    <body>
+        <section class="imagenes-container">
+            <a href="https://www.gob.mx/sep" target="_blank" rel="noopener noreferrer">
+                <img src="images/logo-sep.svg" alt="SEP Logo" class="img-sep">
+            </a>
+
+            <div class="separatorLogos"></div>
+
+            <a href="https://tecnm.mx/" target="_blank" rel="noopener noreferrer">
+                <img src="images/Logo-TecNM.png" alt="TecNM Logo" class="img-tecnm">
+            </a>
+
+            <div class="separatorLogos"></div>
+
+            <a href="https://www.itdurango.edu.mx/" target="_blank" rel="noopener noreferrer">
+                <img src="images/escudo.png" alt="Escudo ITDurango" class="img-escudo">
+            </a>
+
+            <!-- Contenedor de iconos a la derecha -->
+            <div class="iconos-container">
+                <div class="icono-circle">
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                        <img src="images/sobreCorero.png" alt="Correo" class="icono" top="-5px">
+                    </a>
+                </div>
+                <div class="icono-circle search-container">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 17px;"></i>
+                    <input type="text" class="search-bar" placeholder="Buscar...">
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="appSearch.js"></script>
+
+
+    <!-- Navbar de Maestría en Ingeniería -->
+    <nav class="navbarMaestria">
+        <li><a href="index.html" class="linkHome">
+                <i class="fa-solid fa-house"></i>
+            </a></li>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">¿Quiénes somos? <span class="dropdown-arrow"></span></a>
+                <ul class="dropdown-content">
+                    <li><a href="presentacion.html">Presentación del Programa</a></li>
+                    <li><a href="objetivos.html">Objetivos Generales y Específicos</a></li>
+                    <li><a href="misionVision.html">Misión y Visión</a></li>
+                    <li><a href="estadoArte.html">Estado del Arte</a></li>
+                    <li><a href="infraestructura.html">Infraestructura Científica</a></li>
+                    <li><a href="nucleoAcademico.html">Núcleo Académico Básico</a></li>
+                </ul>
+            </li>
+            <li><a href="lgac.html">LGyAC</a></li>
+            <li class="dropdown">
+                <a href="#">Plan de Estudios <span class="dropdown-arrow"></span></a>
+                <ul class="dropdown-content">
+                    <li><a href="localizacion.html">Localización del Programa</a></li>
+                    <li><a href="sintesisPlan.html">Síntesis del Plan de Estudios</a></li>
+                    <li><a href="ingresoEgreso.html">Perfil de Ingreso y Egreso</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Procesos Administrativos <span class="dropdown-arrow"></span></a>
+                <ul class="dropdown-content">
+                    <li><a href="requisitosIngreso.html">Requisitos y antecedentes académicos de ingreso de los
+                            candidatos</a></li>
+                    <li><a href="requisitosPermanencia.html">Requisitos de la permanencia en el programa</a></li>
+                    <li><a href="requisitosAcademico.html">Requisitos para la obtención del grado académico</a></li>
+                </ul>
+            </li>
+            <li><a href="productividad.html">Productividad</a></li>
+            <li><a href="egresados.html">Egresados</a></li>
+            <li><a href="cohorte.html">Cohorte Generacional</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <script src="appNavbar.js"></script>
+
+
+    <!-- Productividad Tablas -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/MI_hd.png" alt="Descripción de la imagen">
+            </div>
+            <div class="about-text">
+                <h2>Productividad</h2>
+                <h3>Cuerpos Académicos</h3>
+
+                <!-- Tabla Cuerpos Académicos -->
+                <table id="tabla1" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Cuerpos Académicos</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Tabla Sistema Nacional de Investigadoras e Investigadores -->
+                <h3>Sistema Nacional de Investigadoras e Investigadores</h3>
+                <table id="tabla2" class="study-plan-table snii-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">No. de SNII</th>
+                            <th colspan="2">NIVEL</th>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Tabla Perfil Deseable -->
+                <h3>Perfil Deseable</h3>
+                <table id="tabla3" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>No. de Profesores</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Tabla Otros reconocimientos -->
+                <h3>Otros reconocimientos</h3>
+                <table id="tabla4" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Profesor</th>
+                            <th>Tipo de Reconocimiento</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Tabla Convenios Firmados -->
+                <h3>Convenios Firmados</h3>
+                <table id="tabla5" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Empresa/Productor</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Tabla Participación en redes de investigación científica y tecnológica -->
+                <h3>Participación en redes de investigación científica y tecnológica</h3>
+                <table id="tabla6" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre de la Red</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tabla LGAC: Ingeniería en Sistemas (ARTICULOS) -->
+    <section class="articulos-container">
+        <h2 class="h2Productividad">LGAC: Ingeniería en Sistemas</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+
+    <!-- Tabla LGAC: Ingeniería en Sistemas (CAPITULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+
+    <!-- Tabla LGAC: Ingeniería en Sistemas (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+
+    <!-- Producción LGAC:  Instrumentación y Bioelectrónica (ARTICULOS) -->
+    <section class="articulos-container">
+        <h2 class="h2Productividad">LGAC: Instrumentación y Bioelectrónica</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos2" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Producción LGAC:  Instrumentación y Bioelectrónica (CAPITULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos2" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Producción LGAC:  Instrumentación y Bioelectrónica (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos2" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- LGAC: Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional (PROYECTOS) -->
+    <section class="articulos-container">
+        <h2 class="h2Productividad">LGAC:  Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos3" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- LGAC: Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional (CAPITULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos3" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- LGAC: Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos3" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Tabla LGAC: Desarrollo de Tecnología e Innovación (ARTICULOS) -->
+    <section class="articulos-container">
+        <h2 class="h2Productividad">LGAC: Desarrollo de Tecnología e Innovación</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos4" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Tabla LGAC: Desarrollo de Tecnología e Innovación (CAPÍTULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos4" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Tabla LGAC: Desarrollo de Tecnología e Innovación (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos4" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script type="module" src="conexionAPIs/ApiProductividad.js"></script>
+
+
+    <!-- Footer Maestría en Ingeniería -->
+    <footer class="footer-maestria">
+        <div class="footer-containerMaestria">
+            <div class="footer-sectionMaestria">
+                <h3>Instituto Tecnológico de Durango</h3>
+                <p>Blvd. Felipe Pescador 1830 Ote. Durango, Dgo.</p>
+                <p>mping@itdurango.edu.mx</p>
+                <p>Tel. 618 325 7467</p>
+            </div>
+            <div class="footer-sectionMaestria">
+                <h3>Instituto Tecnológico del Valle del Guadiana</h3>
+                <p>Km. 22.5 Carretera Durango-México C.P. 34371</p>
+                <p>Tel. 618 596 3051 y 618 596 3052</p>
+            </div>
+            <div class="footer-sectionMaestria">
+                <h3>Síguenos</h3>
+                <!-- Sección de Redes Sociales -->
+                <p>
+                    <a href="https://www.facebook.com/people/Maestr%C3%ADa-en-Ingenier%C3%ADa/100083043137110/"
+                        target="_blank" class="footer-linkMaestria">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@gobiernodemexico" target="_blank" class="footer-linkMaestria">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gobmexico/" target="_blank" class="footer-linkMaestria">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- Flecha hacia arriba -->
+        <a class="btn btn-outline-light btn-floating m-1 arrow-up" href="#top" role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
+            </svg>
+        </a>
+    </footer>
+
+
+    <!-- Footer Gobierno -->
+    <footer class="footer-gobierno">
+        <div class="footer-containerGobierno">
+            <div class="footer-sectionGobierno">
+                <a href="https://www.gob.mx/" class="footer-link" target="_blank">
+                    <img src="images/GobiernoMexico.svg" alt="Descripción de la imagen" class="footer-imagen">
+                </a>
+            </div>
+            <div class="footer-sectionGobierno">
+                <h3>Enlaces</h3>
+                <p><a href="https://datos.gob.mx/" class="footer-link" target="_blank">Datos</a></p>
+                <p><a href="https://failover.www.gob.mx/mantenimiento.html" class="footer-link"
+                        target="_blank">Publicaciones</a></p>
+                <p><a href="https://consultapublicamx.plataformadetransparencia.org.mx/" class="footer-link"
+                        target="_blank">Portal de Obligaciones de Transparencia</a></p>
+                <p><a href="https://infomex.org.mx/gobiernofederal/home.action/" class="footer-link"
+                        target="_blank">PNT</a></p>
+                <p><a href="https://home.inai.org.mx/" class="footer-link" target="_blank">INAI</a></p>
+                <p><a href="https://alertadores.buengobierno.gob.mx/" class="footer-link" target="_blank">Alerta</a></p>
+                <p><a href="https://sidec.buengobierno.gob.mx/#!/" class="footer-link" target="_blank">Denuncia</a></p>
+            </div>
+            <div class="footer-sectionGobierno">
+                <h3>¿Qué es gob.mx?</h3>
+                <p><a href="https://www.gob.mx/que-es-gobmx" class="footer-link" target="_blank">Es el portal único de
+                        trámites, información y participación ciudadana.</a></p>
+                <p><a href="https://www.gob.mx/amlo" class="footer-link" target="_blank">Administraciones anteriores</a>
+                </p>
+                <p><a href="https://www.gob.mx/accesibilidad" class="footer-link" target="_blank">Declaración de
+                        Accesibilidad</a></p>
+                <p><a href="https://www.gob.mx/aviso_de_privacidad" class="footer-link" target="_blank">Aviso de
+                        privacidad</a></p>
+                <p><a href="https://www.gob.mx/privacidadsimplificado" class="footer-link" target="_blank">Aviso de
+                        privacidad simplificado</a></p>
+                <p><a href="https://www.gob.mx/terminos" class="footer-link" target="_blank">Términos y Condiciones</a>
+                </p>
+                <p><a href="https://www.gob.mx/terminos#medidas-seguridad-informacion" class="footer-link"
+                        target="_blank">Política de seguridad</a></p>
+                <p><a href="http://www.ordenjuridico.gob.mx/" class="footer-link" target="_blank">Marco jurídico</a></p>
+                <p><a href="https://www.gob.mx/sitemap" class="footer-link" target="_blank">Mapa de sitio</a></p>
+            </div>
+            <div class="footer-sectionGobierno">
+                <h3>Síguenos</h3>
+                <!-- Sección de Redes Sociales -->
+                <p>
+                    <a href="https://www.facebook.com/gobmexico/" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/GobiernoMX" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@gobiernodemexico" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gobmexico/" target="_blank" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </p>
+                <p><a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54"
+                        class="footer-link" target="_blank">Denuncia contra servidores públicos</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Imagen debajo del Footer -->
+    <div class="imagen-debajo-footer">
+        <img src="images/footer.png" alt="Imagen decorativa debajo del footer">
+    </div>
+</body>
+
+</html>

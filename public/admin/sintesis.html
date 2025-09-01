@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintesis Plan Estudios | Administrador</title>
+    <link rel="stylesheet" href="stylesSintesis.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <script type="module" src="../config1.js"></script>
+
+    <!-- Sección de tablas -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Síntesis del Plan de Estudios</h2>
+                <h3>Maestría con Orientación Profesional</h3>
+                
+                <!-- Tabla Maestría con Orientación Profesional -->
+                <table id="tabla1" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Créditos</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirOrientacion('idDelDoc2')" class="añadir-btnMaestria">Añadir Fila</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Distribución de Asignaturas -->
+                <h3>Distribución de Asignaturas</h3>
+                <table id="tabla2" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Créditos</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirDistribucion('idDelDoc2')" class="añadir-btnAsignaturas">Añadir Fila</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Asignaturas Básicas -->
+                <h3>Asignaturas Básicas</h3>
+                <table id="tabla3" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Créditos</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirBasicas('idDelDoc2')" class="añadir-btnBasicas">Añadir Fila</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Asignaturas Optativas -->
+                <h3>Asignaturas Optativas</h3>
+                <table id="tabla4" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Créditos</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirOptativas('idDelDoc2')" class="añadir-btnOptativas">Añadir Fila</button>
+                </div>
+
+                <div class="separator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script a la Api -->
+    <script type="module" src="appSintesis.js"></script>
+</body>
+
+</html>

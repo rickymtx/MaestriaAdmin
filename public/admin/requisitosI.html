@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requisitos Ingreso | Bienvenida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesRequisitosI.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <script type="module" src="../config1.js"></script>
+
+    <!-- Requisitos y antecedentes académicos de ingreso de los candidatos -->
+    <section class="about-section">
+        <div class="about-container" id="requisitos-container">
+            <div class="about-text">
+                <h2>Requisitos y antecedentes académicos de ingreso de los candidatos</h2>
+                <!-- Sección 1 -->
+                <h3 class="centrado">Antecedentes</h3>
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirAntecedente(this)" class="añadir-btnAntecedentes">Añadir Antecedente</button>
+                </div>
+
+                <!-- Sección 2 -->
+                <h3 class="centrado">Requisitos</h3>
+                <p>Los alumnos que soliciten ingreso al programa deberán de cubrir la fase de selección que incluye los
+                    siguientes puntos:</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirRequisito(this)" class="añadir-btnRequisito">Añadir Requisito</button>
+                </div>
+
+                <!-- Sección 3 -->
+                <h3 class="centrado">Proceso de Selección de Aspirantes</h3>
+                <p>La selección de estudiantes se basa en la evaluación de 3 aspectos básicos:</p>
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirSeleccion(this)" class="añadir-btnSeleccion">Añadir Selección</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script para menaje de inicio de sesión exitoso-->
+    <script type="module" src="appRequisitosI.js"></script>
+
+</body>
+
+</html>

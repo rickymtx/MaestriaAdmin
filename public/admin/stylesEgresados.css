@@ -1,0 +1,106 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 0px; /* Ajusta este valor según la altura del navbar */
+}
+
+/*----------------------------------------------------------------------------*/
+
+/* Estilos para la tabla e imagen */
+.tabla-imagen {
+    width: 100%;
+    max-width: 1365px;
+    height: auto;
+    margin: 0 auto;
+    z-index: 1;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tabla-imagen img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+}
+
+/*----------------------------------------------------------------------------*/
+
+/* Botones */ 
+.btn-cancelar,
+.btn-guardar,
+.btn-editar {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-cancelar {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-guardar {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-cancelar:hover,
+.btn-guardar:hover,
+.btn-editar:hover {
+    opacity: 0.8;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Indicaciones de Egresados */
+.indicaciones {
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 150px;
+    /* Agrega un pequeño espacio entre el título y la lista */
+}
+
+.indicaciones h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 12px;
+}
+
+.indicaciones ol {
+    padding-left: 24px;
+    color: #34495e;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.indicaciones li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.indicaciones strong {
+    color: #2c3e50;
+}

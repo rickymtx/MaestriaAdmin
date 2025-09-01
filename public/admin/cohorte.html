@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohorte Generacional | Administrador</title>
+    <link rel="stylesheet" href="stylesCohorte.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <script type="module" src="../config1.js"></script>
+
+    <!-- Cohorte Generacional -->
+    <section>
+        <h2>Cohorte Generacional</h2>  
+        <table id="tabla1" class="tabla-imagenes">
+            <thead>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Botones de acciones -->
+    <div class="actions">
+        <button onclick="añadirImagen(this)" class="añadir-btnImagen">Añadir Imagen</button>
+    </div>
+
+    <!-- Sección de Indicaciones para Imagen a Cohorte -->
+    <section class="indicaciones">
+        <h3>Gestión de Imágenes de Cohorte Generacional</h3>
+        <ol>
+            <p>Selecciona una nueva imagen desde tu dispositivo. Se recomienda que esté en formato <strong>JPG</strong> o 
+            <strong>PNG</strong>, y tenga dimensiones de <strong>1350 x 750 pixeles</strong> para una mejor visualización.</p>
+        </ol>
+    </section>
+
+    <!-- Script a la Api -->
+    <script type="module" src="appCohorte.js"></script>
+
+</body>
+
+</html>

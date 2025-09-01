@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productividad | Administrador</title>
+    <link rel="stylesheet" href="stylesProductividad2.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <script type="module" src="../config1.js"></script>
+
+    <!-- Tabla LGAC: Ingeniería en Sistemas (ARTICULOS) -->
+    <section class="articulos-container">
+        <h2>LGAC: Ingeniería en Sistemas</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirArticulos(this)" class="añadir-btnArticulos">Añadir Artículo</button>
+        </div>
+    </section>
+
+
+    <!-- Tabla LGAC: Ingeniería en Sistemas (CAPITULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirCapitulos(this)" class="añadir-btnCapitulos">Añadir Capítulo</button>
+        </div>
+    </section>
+
+
+    <!-- Tabla LGAC: Ingeniería en Sistemas (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirProyecto(this)" class="añadir-btnProyectos">Añadir Proyecto</button>
+        </div>
+    </section>
+
+
+    <!-- Producción LGAC:  Instrumentación y Bioelectrónica (ARTICULOS) -->
+    <section class="articulos-container">
+        <h2>LGAC: Instrumentación y Bioelectrónica</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos2" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirArticulo2(this)" class="añadir-btnArticulos2">Añadir Artículo</button>
+        </div>
+    </section>
+
+
+    <!-- Producción LGAC:  Instrumentación y Bioelectrónica (CAPITULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos2" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirCapitulos2(this)" class="añadir-btnCapitulos2">Añadir Capítulo</button>
+        </div>
+    </section>
+
+
+    <!-- Producción LGAC:  Instrumentación y Bioelectrónica (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos2" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirProyecto2(this)" class="añadir-btnProyectos2">Añadir Proyecto</button>
+        </div>
+    </section>
+
+
+    <!-- LGAC: Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional (PROYECTOS) -->
+    <section class="articulos-container">
+        <h2>LGAC:  Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos3" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirArticulo3(this)" class="añadir-btnArticulos3">Añadir Artículo</button>
+        </div>
+    </section>
+
+
+    <!-- LGAC: Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional (CAPITULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos3" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirCapitulos3(this)" class="añadir-btnCapitulos3">Añadir Capítulo</button>
+        </div>
+    </section>
+
+    <!-- LGAC: Desarrollo y Gestión de Proyectos de Ingeniería para el Desarrollo Regional (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos3" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirProyecto3(this)" class="añadir-btnProyectos3">Añadir Proyecto</button>
+        </div>
+    </section>
+
+    <!-- Tabla LGAC: Desarrollo de Tecnología e Innovación (ARTICULOS) -->
+    <section class="articulos-container">
+        <h2>LGAC: Desarrollo de Tecnología e Innovación</h2>
+        <h2 class="titulo-articulos">Artículos</h2>
+
+        <table id="tablaArticulos4" class="articulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirArticulos4(this)" class="añadir-btnArticulos4">Añadir Artículo</button>
+        </div>
+    </section>
+
+    <!-- Tabla LGAC: Desarrollo de Tecnología e Innovación (CAPÍTULOS) -->
+    <section class="capitulos-container">
+        <h2 class="titulo-capitulos2">Capítulos</h2>
+
+        <table id="tablaCapitulos4" class="capitulos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirCapitulos4(this)" class="añadir-btnCapitulos4">Añadir Capítulo</button>
+        </div>
+    </section>
+
+    <!-- Tabla LGAC: Desarrollo de Tecnología e Innovación (PROYECTOS) -->
+    <section class="proyectos-container">
+        <h2 class="titulo-proyectos2">Proyectos de Investigación</h2>
+
+        <table id="tablaProyectos4" class="proyectos-tabla">
+            <tbody></tbody>
+        </table>
+
+        <!-- Botones de acciones -->
+        <div class="actions">
+            <button onclick="añadirProyecto4(this)" class="añadir-btnProyectos4">Añadir Proyecto</button>
+        </div>
+    </section>
+    
+    <!-- Script a la Api -->
+    <script type="module" src="appProductividad2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,537 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 80px;
+    /* Ajusta este valor según la altura del navbar */
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Estilos para tabla de imágenes Portada */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.tabla-imagenes {
+    border-collapse: collapse;
+    width: 70%;
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+.titulo-cohorte {
+    font-size: 1.9rem;
+    padding: 20px 0;
+}
+
+.imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/* Línea espaciadora entre secciones*/
+.separatorSecciones {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin: 40px 0px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Estilos de carrusel */
+.carousel-container {
+    margin-top: 35px;
+    margin-bottom: -100px;
+    position: relative;
+    width: 100vw;
+    /* Ocupa toda la pantalla horizontalmente */
+    height: 450px;
+    /* Mantiene una altura fija */
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 200vw;
+    /* Ajusta según el número de imágenes (2 imágenes = 200vw) */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100vw;
+    /* Cada imagen ocupa toda la pantalla */
+    height: 250px;
+    /* Asegura que las imágenes coincidan con la altura del contenedor */
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev,
+.next {
+    display: none;
+}
+
+#tablaCarrusel {
+    border-collapse: collapse; /* Elimina espacio entre bordes */
+    border: none;
+    width: 100%;
+}
+
+#tablaCarrusel td {
+    border: none;
+    padding: 0; /* Opcional: elimina espacios internos */
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Estilos Galería */
+.tabla-galeria {
+    border-collapse: separate;
+    border-spacing: 35px;
+    /* Espacio entre celdas */
+    width: max-content;
+    /* Tamaño basado en el contenido */
+    margin: 0 auto;
+    /* Centrar tabla horizontalmente */
+    table-layout: fixed;
+}
+
+.fila-galeria {
+    height: 200px;
+}
+
+.celda-galeria {
+    width: 350px;
+    height: 150px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.contenedor-galeria {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-galeria {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    margin: 0;
+    color: white;
+    padding: 5px 10px;
+    z-index: 2;
+    font-size: 1.3rem;
+}
+
+.imagen-galeria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ver-mas-galeria {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mas-galeria:hover {
+    background-color: rgba(143, 116, 46, 0.7);
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Estilos Eventos */
+.titulo-eventos {
+    margin-top: 125px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #000;
+}
+
+section {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-eventos {
+    width: 80%;
+    border-collapse: collapse;
+    /*border: 1px solid #000; */
+}
+
+.tabla-eventos td {
+    /*border: 1px solid #000; */
+    padding: 12px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.fecha,
+.titulo,
+.lugar {
+    font-weight: bold;
+    color: #000;
+}
+
+.descripcion {
+    color: #666;
+    font-size: 15px;
+}
+
+.tabla-eventos tr.espacio-en-blanco td {
+    padding: 40px 0;
+    height: 30px;
+    border: none;
+}
+
+.linea-separadora {
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+.tabla-eventos {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.tabla-eventos.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Sección Multimedia */
+.container-Podcast {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 150px;
+    gap: 40px;
+}
+
+h2 {
+    margin-bottom: -30px;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: -65px;
+}
+
+.titulo-P1 {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.podcast-section {
+    flex: 2;
+}
+
+.social {
+    flex: 1;
+    max-width: 340px;
+}
+
+.tabla-podcasts {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px -50px;
+}
+
+.podcast {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    vertical-align: top;
+    width: 35%;
+}
+
+.titulo-podcast {
+    text-align: center;
+    color: #000 !important;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.podcast p {
+    text-align: center;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.espacio {
+    width: 0%;
+}
+
+.fila-espaciadora {
+    height: -50px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Botones */
+.actions {
+    margin-top: 10px;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-editarCarrusel,
+.btn-eliminarGaleria,
+.btn-editar,
+.añadir-btnGaleria,
+.btn-cancelar,
+.btn-guardar,
+.edit-btnImagen,
+.cancel-btnPodcast,
+.save-btnPodcast,
+.delete-btnPodcast,
+.edit-btnPodcast,
+.añadir-btnPodcast,
+.cancel-btnEventos,
+.save-btnEventos,
+.delete-btnEventos,
+.edit-btnEventos,
+.añadir-btnEvento {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.añadir-btnGaleria,
+.btn-guardar,
+.save-btnPodcast,
+.añadir-btnPodcast,
+.save-btnEventos,
+.añadir-btnEvento {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-editarCarrusel,
+.btn-editar,
+.edit-btnImagen,
+.edit-btnPodcast,
+.edit-btnEventos {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-eliminarGaleria,
+.btn-cancelar,
+.cancel-btnPodcast,
+.delete-btnPodcast,
+.cancel-btnEventos,
+.delete-btnEventos {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-editarCarrusel:hover,
+.btn-eliminarGaleria:hover,
+.btn-editar:hover,
+.añadir-btnGaleria:hover,
+.btn-cancelar:hover,
+.btn-guardar:hover,
+.edit-btnImagen:hover,
+.cancel-btnPodcast:hover,
+.save-btnPodcast:hover,
+.delete-btnPodcast:hover,
+.edit-btnPodcast:hover,
+.añadir-btnPodcast:hover,
+.cancel-btnEventos:hover,
+.save-btnEventos:hover,
+.delete-btnEventos:hover,
+.edit-btnEventos:hover,
+.añadir-btnEvento:hover {
+    opacity: 0.8;
+}
+
+.edit-btnPodcast,
+.delete-btnPodcast {
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.edit-btnImagen {
+    margin-top: 30px;
+}
+
+.delete-btnPodcast {
+    margin-bottom: 120px;
+}
+
+.btn-cancelar,
+.btn-guardar {
+    margin-top: 10px;
+}
+
+.btn-editar {
+    margin-top: 5px;
+}
+
+.btn-editarCarrusel {
+    margin-top: 40px;
+    margin-left: 680px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* ESTILOS PARA INPUTS Y TEXT AREAS*/
+textarea {
+    width: 100%;
+    height: 60px;
+    resize: vertical;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.input-podcast {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.input-galeria {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: -5px;
+    font-size: 1rem;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Indicaciones de Podcasts*/
+.indicaciones {
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Agrega un pequeño espacio entre el título y la lista */
+}
+
+.indicaciones h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 12px;
+}
+
+.indicaciones ol {
+    padding-left: 24px;
+    color: #34495e;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.indicaciones li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.indicaciones strong {
+    color: #2c3e50;
+}
+
+.indicaciones p {
+    text-align: justify;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.modal-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-formulario {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 1001;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}

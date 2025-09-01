@@ -1,0 +1,434 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 0px; /* Ajusta este valor según la altura del navbar */
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado de center a flex-start */
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-start; /* Alinea el texto con la parte superior de la imagen */
+}
+
+.about-text {
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que todo el contenido esté centrado */
+}
+
+.about-text h2 {
+    padding-top: -5px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.about-text h3 {
+    color: #000; /* Color más claro para el subtítulo */
+    margin-top: 13px;
+    margin-bottom: -5px;
+    font-size: 1.3rem;
+}
+
+.about-text p{
+    font-size: 1.3rem;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+
+/* Diseño para las tablas */
+.study-plan-table {
+    width: 100%;
+    max-width: 900px; /* Limitar el ancho de la tabla */
+    margin: 20px auto; /* Centrar la tabla */
+    border-collapse: collapse;
+}
+
+.study-plan-table th, .study-plan-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000; /* Cambiar a color negro */
+}
+
+.study-plan-table th {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #f2f2f2;
+    color: #000; /* Color más oscuro para el encabezado */
+    font-weight: bold;
+}
+
+.study-plan-table td {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #fff;
+}
+
+/* Estilos específicos para tabla de Cuerpos Académicos (tabla1) */
+#tabla1 td div {
+    margin-bottom: 8px; /* Espaciado tipo punto y aparte */
+    text-align: center; /* Alinear texto a la izquierda */
+    line-height: 1;
+}
+
+/* Estilos específicos para tabla de Redes de Investigación (tabla6) */
+#tabla6 td ul {
+    padding-left: 20px;
+    margin: 0;
+    text-align: center; /* Alinear texto a la izquierda */
+}
+
+#tabla6 td li {
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+/* Estilos específicos para la tabla SNII */
+.snii-table {
+    width: 100%; /* Hacer que la tabla ocupe el mismo ancho que las demás */
+    max-width: 900px; /* Igualar el ancho máximo de las demás tablas */
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.snii-table th, .snii-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.snii-table th {
+    text-align: center;
+    background-color: #f2f2f2; /* Color similar al de la imagen */
+    font-weight: bold;
+}
+
+.snii-table td {
+    background-color: #fff;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Estilos para Productividad */
+/* Contenedor para el contenido */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado de center a flex-start */
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-start; /* Alinea el texto con la parte superior de la imagen */
+}
+
+.about-text {
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que todo el contenido esté centrado */
+}
+
+.about-text h2 {
+    padding-top: -30px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.about-text h3 {
+    color: #000; /* Color más claro para el subtítulo */
+    margin-top: 30px;
+    margin-bottom: -5px;
+    font-size: 1.3rem;
+}
+
+.about-text p{
+    font-size: 1.3rem;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+/* Diseño para las tablas */
+.study-plan-table {
+    width: 100%;
+    max-width: 900px; /* Limitar el ancho de la tabla */
+    margin: 20px auto; /* Centrar la tabla */
+    border-collapse: collapse;
+}
+
+.study-plan-table th, .study-plan-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000; /* Cambiar a color negro */
+}
+
+.study-plan-table th {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #f2f2f2;
+    color: #000; /* Color más oscuro para el encabezado */
+    font-weight: bold;
+}
+
+.study-plan-table td {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #fff;
+}
+
+/* Estilos específicos para tabla de Cuerpos Académicos (tabla1) */
+#tabla1 td div {
+    margin-bottom: 8px; /* Espaciado tipo punto y aparte */
+    text-align: center; /* Alinear texto a la izquierda */
+    line-height: 1.5;
+}
+
+/* Estilos específicos para tabla de Redes de Investigación (tabla6) */
+#tabla6 td ul {
+    padding-left: 20px;
+    margin: 0;
+    text-align: center; /* Alinear texto a la izquierda */
+}
+
+#tabla6 td li {
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+/* Estilos específicos para la tabla SNII */
+.snii-table {
+    width: 100%; /* Hacer que la tabla ocupe el mismo ancho que las demás */
+    max-width: 900px; /* Igualar el ancho máximo de las demás tablas */
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.snii-table th, .snii-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.snii-table th {
+    text-align: center;
+    background-color: #f2f2f2; /* Color similar al de la imagen */
+    font-weight: bold;
+}
+
+.snii-table td {
+    background-color: #fff;
+}
+
+/*----------------------------------------------------------------*/
+
+/* Línea espaciadora */
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    /* Color de la línea */
+    margin: 40px 0px;
+    /* Espaciado arriba y abajo */
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.input-amplio {
+  width: 85%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/*----------------------------------------------------------------*/
+
+.actions {
+    margin-top: 10px;
+}
+
+.edit-btnCuerpos,
+.edit-btnSistema,
+.edit-btnPerfil,
+.edit-btnOtros,
+.edit-btnConvenios,
+.edit-btnParti,
+.añadir-btnParti,
+.delete-btnCuerpos,
+.delete-btnOtros,
+.delete-btnParti,
+.añadir-btnCuerpos,
+.añadir-btnOtros {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btnSistema,
+.edit-btnCuerpos,
+.edit-btnPerfil,
+.edit-btnOtros,
+.edit-btnConvenios,
+.edit-btnParti {
+    background-color: #ffc107;
+    color: black;
+}
+
+.edit-btnCuerpos,
+.delete-btnCuerpos {
+    margin-top: 15px;
+}
+
+.delete-btnParti,
+.delete-btnCuerpos,
+.delete-btnOtros {
+    background-color: #dc3545;
+    color: white;
+}
+
+.añadir-btnParti,
+.añadir-btnCuerpos,
+.añadir-btnOtros {
+    background-color: #007bff;
+    color: white;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    /* alineado a la izquierda */
+    gap: 10px;
+}
+
+.edit-btnCuerpos:hover,
+.edit-btnSistema:hover,
+.edit-btnPerfil:hover,
+.edit-btnOtros:hover,
+.edit-btnConvenios:hover,
+.edit-btnParti:hover,
+.delete-btnParti:hover,
+.delete-btnCuerpos:hover,
+.delete-btnOtros:hover,
+.añadir-btnParti:hover,
+.añadir-btnCuerpos:hover,
+.añadir-btnOtros:hover {
+    opacity: 0.8;
+}
+
+/*----------------------------------------------------------------*/
+
+.save-btnCuerpos,
+.save-btnSistema,
+.save-btnPerfil,
+.save-btnConvenios,
+.save-btnParti,
+.save-btnOtros,
+.cancelar-btnCuerpos,
+.cancel-btnSistema,
+.cancel-btnPerfil,
+.cancel-btnConvenios,
+.cancel-btnParti,
+.cancel-btnOtros {
+    padding: 6px 12px;
+    margin-right: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-guardarFila,
+.save-btnSistema,
+.save-btnPerfil,
+.save-btnConvenios,
+.save-btnParti,
+.save-btnCuerpos,
+.save-btnOtros {
+    background-color: #007bff;
+    color: white;
+}
+
+.cancel-btnSistema,
+.cancel-btnPerfil,
+.cancel-btnConvenios,
+.cancel-btnParti,
+.cancelar-btnCuerpos,
+.cancel-btnOtros {
+    background-color: #dc3545;
+    color: white;
+}
+
+.save-btnSistema:hover,
+.save-btnPerfil:hover,
+.save-btnConvenios:hover,
+.save-btnParti:hover,
+.save-btnCuerpos:hover,
+.save-btnOtros:hover,
+.cancel-btnSistema:hover,
+.cancel-btnPerfil:hover,
+.cancel-btnConvenios:hover,
+.cancel-btnParti:hover,
+.cancelar-btnCuerpos:hover,
+.cancel-btnOtros:hover {
+    opacity: 0.8;
+}
+
+.nuevo-campo {
+    padding: 6px;
+    width: 80%;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.save-btnCuerpos, .cancelar-btnCuarpos {
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.save-btnParti,
+.cancel-btnParti,
+.save-btnCuerpos,
+.cancelar-btnCuarpos {
+    margin-top: 10px;
+}
+
+/* Estilos para tablas */
+.edit-area {
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 2px 4px;
+  box-sizing: border-box;
+}

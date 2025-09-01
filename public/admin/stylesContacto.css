@@ -1,0 +1,134 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 0px; /* Ajusta este valor según la altura del navbar */
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado de center a flex-start */
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-start; /* Alinea el texto con la parte superior de la imagen */
+}
+
+.about-text {
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que todo el contenido esté centrado */
+}
+
+.about-text h2 {
+    padding-top: -15px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.about-text h3 {
+    color: #000; /* Color más claro para el subtítulo */
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+.about-text p{
+    font-size: 1.3rem;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+/* Diseño para las tablas */
+.study-plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.study-plan-table th, .study-plan-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000; /* Cambiar a color negro */
+}
+
+.study-plan-table th {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #f2f2f2;
+    color: #000; /* Color más oscuro para el encabezado */
+    font-weight: bold;
+}
+
+.study-plan-table td {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #fff;
+}
+
+/*---------------------------------------------------------------------*/
+
+.actions {
+    margin-top: 10px;
+}
+
+.cancel-btnContacto,
+.save-btnContacto,
+.delete-btnContacto,
+.edit-btnContacto,
+.añadir-btnContacto {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btnContacto,
+.añadir-btnContacto {
+    background-color: #007bff;
+    color: white;
+    margin-top: 15px;
+}
+
+.edit-btnContacto {
+    background-color: #ffc107;
+    color: black;
+}
+
+.cancel-btnContacto,
+.delete-btnContacto {
+    background-color: #dc3545;
+    color: white;
+}
+
+.cancel-btnContacto:hover,
+.save-btnContacto:hover,
+.delete-btnContacto:hover,
+.edit-btnContacto:hover,
+.añadir-btnContacto:hover {
+    opacity: 0.8;
+}
+
+.edit-btnContacto,
+.save-btnContacto {
+    margin-bottom: 5px;
+}
+
+.input-amplio {
+  width: 85%;
+  padding: 8px;
+  font-size: 16px;
+}

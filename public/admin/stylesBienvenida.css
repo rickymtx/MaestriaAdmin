@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 320px; /* Aumentado */
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+  }
+
+  .sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  .sidebar a:hover {
+    background-color: #002244; /* Un azul un poco más oscuro para el hover */
+  }
+
+  /* Contenido */
+  .main {
+    margin-left: 320px; /* Ajustado al nuevo ancho de la sidebar */
+    flex: 1;
+    padding: 40px;
+  }
+
+  .main h1 {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .main p {
+    font-size: 18px;
+    color: #000;
+  }
+
+  .bienvenida-box {
+    margin-top: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .bienvenida-box ul {
+    margin-top: 15px;
+    padding-left: 20px;
+  }
+
+  .bienvenida-box li {
+    margin-bottom: 10px;
+    color: #000;
+  }
+  

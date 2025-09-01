@@ -1,0 +1,168 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 0px; /* Ajusta este valor según la altura del navbar */
+}
+
+/*---------------------------------------------------------------------------*/
+
+h2 {
+    margin-bottom: 0px;
+    margin-bottom: 65px;
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+}
+
+/* Estilos para tabla de imágenes */
+section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  margin: 40px 0;
+}
+
+.tabla-imagenes {
+  border-collapse: collapse;
+  width: 70%;
+  max-width: 100%;
+  text-align: center;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+.titulo {
+  font-size: 1.3rem;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+}
+
+.imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.espacio td {
+  height: 70px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Estilos de botones */
+.btn-cancelar,
+.btn-guardar,
+.delete-btnImagen,
+.edit-btnImagen,
+.cancel-btnImagenes,
+.save-btnImagenes,
+.añadir-btnImagen {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-guardar,
+.save-btnImagenes,
+.añadir-btnImagen {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btnImagen {
+    background-color: #ffc107;
+    color: black;
+    margin-top: 10px;
+}
+
+.btn-cancelar,
+.delete-btnImagen,
+.cancel-btnImagenes {
+    background-color: #dc3545;
+    color: white;
+    margin-top: 10px;
+}
+
+.actions {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    gap: 10px;
+    width: 100%;
+    /* Asegura que el contenedor use todo el ancho disponible */
+    margin-bottom: 70px;
+}
+
+.btn-cancelar:hover,
+.btn-guardar:hover,
+.delete-btnImagen:hover,
+.edit-btnImagen:hover,
+.cancel-btnImagenes:hover,
+.save-btnImagenes:hover,
+.añadir-btnImagen:hover {
+    opacity: 0.8;
+}
+
+.input-titulo {
+  width: 90%;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.input-imagen {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Indicaciones de Cohorte Generacional */
+.indicaciones {
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 150px;
+    /* Agrega un pequeño espacio entre el título y la lista */
+}
+
+.indicaciones h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 12px;
+}
+
+.indicaciones ol {
+    padding-left: 24px;
+    color: #34495e;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.indicaciones li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.indicaciones strong {
+    color: #2c3e50;
+}

@@ -1,0 +1,237 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Fondo y fuente */
+body {
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: -40px;
+}
+
+.perfil-container h2 {
+    padding-top: -100px;
+    font-size: 2rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.perfil-wrapper {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.perfil-container {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+table.perfil {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td.imagen {
+    width: 150px;
+    padding: 8px;
+    vertical-align: top;
+}
+
+td.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+td.datos {
+    padding: 8px 8px 4px 24px;
+    /* Menos padding abajo */
+    vertical-align: top;
+    font-size: 1rem;
+    line-height: 1.8;
+    /* Más compacto */
+    text-align: justify;
+}
+
+.detalles {
+    margin-top: 0px;
+    font-size: 1rem;
+    line-height: 1.8;
+    /* Más compacto */
+    text-align: justify;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.oculto {
+    display: none;
+}
+
+.toggle-btn {
+    color: #007BFF;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
+}
+
+.datos h3 {
+    margin-bottom: 5px;
+}
+
+.datos a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.datos a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Línea espaciadora */
+.separator {
+    width: 575% !important;
+    height: 2px !important;
+    background-color: #ccc !important;
+    margin: 40px 0px !important;
+    /* Espaciado arriba y abajo */
+    margin-bottom: 40px !important;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.edit-btnNucleo,
+.delete-btnNucleo,
+.save-btnNucleo,
+.añadir-btnProfesor {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btnNucleo,
+.añadir-btnProfesor {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btnNucleo {
+    background-color: #ffc107;
+    color: black;
+}
+
+.delete-btnNucleo {
+    background-color: #dc3545;
+    color: white;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    gap: 10px;
+    width: 100%;
+    /* Asegura que el contenedor use todo el ancho disponible */
+}
+
+.edit-btnNucleo:hover,
+.delete-btnNucleo:hover,
+.save-btnNucleo:hover,
+.añadir-btnProfesor:hover {
+    opacity: 0.8;
+}
+
+.save-btnNucleo,
+.delete-btnNucleo {
+    margin-top: 10px;
+}
+
+.input-amplio {
+    width: 95%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.custom-file-upload img {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.custom-file-upload img:hover {
+    border-color: #007bff;
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Indicaciones de Núcleo Académico Básico */
+.indicaciones {
+    background-color: #f4f4f9;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Agrega un pequeño espacio entre el título y la lista */
+}
+
+.indicaciones h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 0;
+    border-left: 5px solid #3498db;
+    padding-left: 12px;
+}
+
+.indicaciones ol {
+    padding-left: 24px;
+    color: #34495e;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.indicaciones li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.indicaciones strong {
+    color: #2c3e50;
+}

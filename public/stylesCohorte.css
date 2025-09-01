@@ -1,0 +1,2015 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 80px;
+    /* Ajusta este valor según la altura del navbar */
+}
+
+/* Estilos Navbar Gobierno de México */
+.navbarGobierno {
+    display: flex;
+    /* Establece un contenedor flexbox para organizar los elementos dentro de la barra de navegación */
+    justify-content: flex-end;
+    /* Alinea los elementos al final (derecha) del contenedor */
+    align-items: center;
+    /* Alinea los elementos verticalmente al centro */
+    padding: 26px 130px;
+    /* Agrega un padding de 26px arriba y abajo, 130px a los lados */
+    background-color: #611232;
+    /* Establece un color de fondo oscuro */
+    position: fixed;
+    /* Permite posicionar los elementos hijos de forma relativa */
+    z-index: 1000;
+    /* Asegura que la barra de navegación se muestre encima de otros elementos */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbarGobierno .logo-link {
+    position: absolute;
+    /* Posiciona el enlace de logo de forma absoluta dentro de su contenedor */
+    left: 110px;
+    /* Ajusta la distancia del borde izquierdo */
+}
+
+.navbarGobierno .logo {
+    width: 130px;
+    /* Establece el ancho de la imagen del logo */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Asegura que la imagen se muestre como un bloque, eliminando espacios inferiores */
+}
+
+.nav-linksGobierno {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    /* Elimina el padding predeterminado de la lista */
+    margin: 0;
+    /* Elimina el margen predeterminado de la lista */
+    display: flex;
+    /* Organiza los elementos de la lista en una fila con flexbox */
+}
+
+.nav-linksGobierno li {
+    margin-left: 30px;
+    /* Añade un margen de 30px a la izquierda de cada ítem de la lista */
+}
+
+.nav-linksGobierno a {
+    text-decoration: none;
+    /* Elimina el subrayado predeterminado de los enlaces */
+    color: #fff;
+    /* Establece el color del texto de los enlaces a blanco */
+    font-size: 17px;
+    /* Define el tamaño de la fuente de los enlaces */
+    padding: 8px 5px;
+    /* Añade espacio de 8px arriba y abajo, 5px a los lados en los enlaces */
+}
+
+.nav-linksGobierno a:hover {
+    color: #dcc9a0;
+    /* Cambia el color del texto cuando se pasa el ratón sobre el enlace */
+}
+
+.menu-iconGobierno {
+    display: none;
+    /* Oculta el ícono de menú en pantallas grandes */
+    flex-direction: column;
+    /* Organiza las líneas del ícono en una columna */
+    cursor: pointer;
+    /* Cambia el cursor a mano al pasar sobre el ícono */
+    margin-left: auto;
+    /* Coloca el ícono a la derecha en su contenedor */
+    position: relative;
+    /* Permite la posición relativa del ícono dentro de su contenedor */
+    z-index: 2;
+    /* Asegura que el ícono se coloque por encima de otros elementos */
+}
+
+.menu-iconGobierno .lineGobierno {
+    width: 30px;
+    /* Establece el ancho de las líneas del ícono de menú */
+    height: 3px;
+    /* Define la altura de las líneas */
+    background-color: #fff;
+    /* Establece el color de las líneas a blanco */
+    margin: 5px 0;
+    /* Añade un margen de 5px entre las líneas */
+    transition: all 0.3s ease;
+    /* Añade una transición suave cuando cambian las propiedades de las líneas */
+}
+
+#menu-toggleGobierno {
+    display: none;
+    /* Oculta el checkbox de menú, utilizado en la lógica del menú responsive */
+}
+
+.logo {
+    width: 120px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    display: block;
+    /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente (si es necesario) */
+}
+
+@media(max-width: 768px) {
+    .navbarGobierno {
+        padding: 16px;
+    }
+
+    .menu-iconGobierno {
+        display: flex;
+    }
+
+    .nav-linksGobierno {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #611232;
+        text-align: center;
+        transition: heigth 0.5s ease;
+    }
+
+    .nav-linksGobierno li {
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .nav-linksGobierno a {
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    #menu-toggleGobierno:checked+.menu-iconGobierno+.nav-linksGobierno {
+        height: auto;
+        /* Cambiado de 30vh a auto */
+        overflow: visible;
+        /* Asegura que el contenido sea visible */
+    }
+
+    #menu-toggleGobierno:checked+.menu-iconGobierno .lineGobierno:nth-child(1) {
+        transform: rotate(45deg) translate(15px, 3px);
+    }
+
+    #menu-toggleGobierno:checked+.menu-iconGobierno .lineGobierno:nth-child(2) {
+        transform: scale(0);
+    }
+
+    #menu-toggleGobierno:checked+.menu-iconGobierno .lineGobierno:nth-child(3) {
+        transform: rotate(-45deg) translate(15px, -4px);
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Estilos Logos Oficiales */
+.imagenes-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: left;
+    margin-left: 150px;
+}
+
+/* Estilos generales */
+.imagenes-container img {
+    height: auto;
+    object-fit: contain;
+    margin-bottom: -10px;
+}
+
+/* Tamaños individuales para cada imagen */
+.img-sep {
+    margin-top: 5px;
+    width: 300px;
+}
+
+.img-tecnm {
+    width: 170px;
+}
+
+.img-escudo {
+    width: 65px;
+}
+
+/* Efecto hover para todas las imágenes */
+.imagenes-container img:hover {
+    color: white;
+}
+
+/* Separador vertical */
+.separatorLogos {
+    width: 2px;
+    height: 75px;
+    /* Ajusta la altura según sea necesario */
+    background-color: #b29140;
+    /* Color de la línea */
+    opacity: 0.5;
+    /* Opcional: hace la línea más tenue */
+}
+
+/* Contenedor de iconos */
+.iconos-container {
+    display: flex;
+    gap: 20px;
+    margin-left: 270px;
+    /* Mueve los iconos a la derecha */
+    margin-top: 17px;
+    /* Ajusta la distancia hacia abajo */
+}
+
+/* Estilo de los círculos azules */
+.icono-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #003366;
+    /* Color azul */
+    border-radius: 50%;
+    /* Hace el div circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icono-circle i {
+    color: white !important;
+    /* Asegura que el color se aplique */
+}
+
+.icono {
+    margin-top: -3px;
+    /* Ajusta el valor para subir o bajar */
+}
+
+/* Íconos dentro de los círculos */
+.icono {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Contenedor del icono de búsqueda */
+.search-container {
+    position: relative;
+    /* Asegura que la barra de búsqueda se posicione respecto a este div */
+    display: flex;
+    align-items: center;
+}
+
+/* Ícono de búsqueda */
+.search-icon {
+    position: absolute;
+    left: 15px;
+    /* Posiciona la lupa dentro de la barra de búsqueda */
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* Barra de búsqueda oculta por defecto */
+.search-bar {
+    position: absolute;
+    right: 0px;
+    /* Alinea la barra correctamente */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    /* Inicialmente oculta */
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0 10px 0 40px;
+    /* Ajusta para que la lupa no cubra el texto */
+    font-size: 16px;
+    background-color: #003366;
+    /* Azul */
+    color: #fff;
+    border-radius: 60px;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Cuando el usuario pasa el cursor sobre el contenedor, la barra aparece */
+.search-container:hover .search-bar {
+    width: 340px;
+    padding: 0 10px 0 40px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Función dinamica en Js*/
+.video-item {
+    opacity: 0;
+    transform: translateY(30px);
+    /* Para aplicar un desplazamiento inicial */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.video-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Restablecer el desplazamiento al ser visible */
+}
+
+/*--------------------------*/
+/*-----DISEÑO RESPONSIVO----*/
+/*--------------------------*/
+
+/* Cuando la pantalla es menor a 1200px */
+@media (max-width: 1200px) {
+    .imagenes-container {
+        margin-left: 50px;
+    }
+
+    .iconos-container {
+        margin-left: 100px;
+        justify-content: center;
+    }
+
+    .img-sep {
+        margin-top: 15px;
+        width: 250px;
+    }
+
+    .img-tecnm {
+        margin-top: 7.5px;
+        width: 150px;
+    }
+
+    .img-escudo {
+        margin-top: 10px;
+        width: 55px;
+    }
+
+    .separatorLogos {
+        width: 2px;
+        height: 80px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+}
+
+/* Cuando la pantalla es menor a 768px (tabletas) */
+@media (max-width: 768px) {
+
+    /* Aseguramos que las imágenes y los íconos estén en una fila */
+    .imagenes-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permite que los elementos se ajusten si no caben */
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        /* Espaciado entre elementos */
+        margin-left: -10px;
+    }
+
+    /* Tamaños individuales para cada imagen */
+    .img-sep {
+        margin-top: 0px;
+        width: 140px;
+    }
+
+    .img-tecnm {
+        margin-top: -5px;
+        width: 80px;
+    }
+
+    .img-escudo {
+        margin-top: 0px;
+        width: 35px;
+    }
+
+    /* Alinear los iconos con las imágenes */
+    .iconos-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        /* Espaciado entre iconos */
+        margin-left: 60px;
+        /* Mueve los íconos más a la derecha */
+        margin-top: 10px;
+    }
+
+    /* Ajustamos el tamaño de los iconos */
+    .icono-circle {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        /* Centra verticalmente */
+        justify-content: center;
+        /* Centra horizontalmente */
+    }
+
+    .icono {
+        margin-top: -7px !important;
+        width: 20px;
+        height: 20px;
+        display: block;
+        /* Asegura que no haya espacio extra */
+    }
+
+    /* Barra de búsqueda más pequeña */
+    .search-bar-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-bar {
+        flex-shrink: 0;
+        /* Evita que se expanda */
+    }
+
+    /* Separador oculto en pantallas pequeñas */
+    .separatorLogos {
+        width: 2px;
+        height: 45px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+}
+
+/* Cuando la pantalla es menor a 480px (teléfonos móviles) */
+@media (max-width: 500px) {
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        /* imagenes a la izq, iconos a la der */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-top: -10px;
+    }
+
+    .iconos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 90px;
+        gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    .img-sep {
+        width: 140px;
+        margin-top: 0;
+    }
+
+    .img-tecnm {
+        width: 80px;
+        margin-top: -3px;
+    }
+
+    .img-escudo {
+        width: 35px;
+        margin-top: 0;
+    }
+
+    .separatorLogos {
+        width: 1px;
+        height: 30px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+
+    .icono-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icono {
+        width: 17px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .search-bar {
+        width: 180px;
+        font-size: 14px;
+        padding: 0 10px 0 35px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .search-container:hover .search-bar {
+        width: 180px;
+        padding: 0 10px 0 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        /* imagenes a la izq, iconos a la der */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-top: -10px;
+    }
+
+    .iconos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 90px;
+        gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    .img-sep {
+        width: 130px;
+        margin-top: 0;
+    }
+
+    .img-tecnm {
+        width: 70px;
+        margin-top: -3px;
+    }
+
+    .img-escudo {
+        width: 35px;
+        margin-top: 0;
+    }
+
+    .separatorLogos {
+        width: 1px;
+        height: 30px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+
+    .icono-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icono {
+        width: 17px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .search-bar {
+        width: 180px;
+        font-size: 14px;
+        padding: 0 10px 0 35px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .search-container:hover .search-bar {
+        width: 180px;
+        padding: 0 10px 0 35px;
+    }
+}
+
+@media (max-width: 460px) {
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        /* imagenes a la izq, iconos a la der */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-top: -10px;
+    }
+
+    .iconos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 40px;
+        gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    .img-sep {
+        width: 130px;
+        margin-top: 0;
+    }
+
+    .img-tecnm {
+        width: 70px;
+        margin-top: -3px;
+    }
+
+    .img-escudo {
+        width: 29px;
+        margin-top: 0;
+    }
+
+    .separatorLogos {
+        width: 1px;
+        height: 30px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+
+    .icono-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icono {
+        width: 17px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .search-bar {
+        width: 180px;
+        font-size: 14px;
+        padding: 0 10px 0 35px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .search-container:hover .search-bar {
+        width: 180px;
+        padding: 0 10px 0 35px;
+    }
+}
+
+@media (max-width: 440px) {
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        /* imagenes a la izq, iconos a la der */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-top: -10px;
+    }
+
+    .iconos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 40px;
+        gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    .img-sep {
+        width: 130px;
+        margin-top: 0;
+    }
+
+    .img-tecnm {
+        width: 70px;
+        margin-top: -3px;
+    }
+
+    .img-escudo {
+        width: 29px;
+        margin-top: 0;
+    }
+
+    .separatorLogos {
+        width: 1px;
+        height: 30px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+
+    .icono-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icono {
+        width: 17px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .search-bar {
+        width: 180px;
+        font-size: 14px;
+        padding: 0 10px 0 35px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .search-container:hover .search-bar {
+        width: 180px;
+        padding: 0 10px 0 35px;
+    }
+}
+
+@media (max-width: 420px) {
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        /* imagenes a la izq, iconos a la der */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        margin-top: -10px;
+    }
+
+    .iconos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 35px;
+        gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    .img-sep {
+        width: 130px;
+        margin-top: 0;
+    }
+
+    .img-tecnm {
+        width: 70px;
+        margin-top: -3px;
+    }
+
+    .img-escudo {
+        width: 29px;
+        margin-top: 0;
+    }
+
+    .separatorLogos {
+        width: 1px;
+        height: 30px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+
+    .icono-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icono {
+        width: 17px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .search-bar {
+        width: 180px;
+        font-size: 14px;
+        padding: 0 10px 0 35px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .search-container:hover .search-bar {
+        width: 180px;
+        padding: 0 10px 0 35px;
+    }
+}
+
+/* Cuando la pantalla es menor a 390px (Pantallas todavía más pequeñas) */
+@media (max-width: 390px) {
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        /* imagenes a la izq, iconos a la der */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        margin-top: -10px;
+    }
+
+    .iconos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 20px;
+        gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    .img-sep {
+        width: 130px;
+        margin-top: 0;
+    }
+
+    .img-tecnm {
+        width: 70px;
+        margin-top: -3px;
+    }
+
+    .img-escudo {
+        width: 29px;
+        margin-top: 0;
+    }
+
+    .separatorLogos {
+        width: 1px;
+        height: 30px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+
+    .icono-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icono {
+        width: 17px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .search-bar {
+        width: 180px;
+        font-size: 14px;
+        padding: 0 10px 0 35px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .search-container:hover .search-bar {
+        width: 180px;
+        padding: 0 10px 0 35px;
+    }
+}
+
+@media (max-width: 370px) {
+    .contenedor-principal {
+        display: flex;
+        justify-content: space-between;
+        /* imagenes a la izq, iconos a la der */
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagenes-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        margin-top: -10px;
+    }
+
+    .iconos-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 20px;
+        gap: 7px;
+        margin-bottom: 5px;
+    }
+
+    .img-sep {
+        width: 100px;
+        margin-top: 0;
+    }
+
+    .img-tecnm {
+        width: 50px;
+        margin-top: -3px;
+    }
+
+    .img-escudo {
+        width: 18px;
+        margin-top: 10;
+    }
+
+    .separatorLogos {
+        margin-bottom: -10px;
+        width: 1px;
+        height: 20px;
+        background-color: #b29140;
+        opacity: 0.5;
+    }
+
+    .icono-circle {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icono {
+        width: 17px;
+        height: 18px;
+        margin-top: -6px;
+    }
+
+    .search-bar {
+        width: 180px;
+        font-size: 14px;
+        padding: 0 10px 0 35px;
+    }
+
+    .search-icon {
+        position: absolute;
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .search-container:hover .search-bar {
+        width: 180px;
+        padding: 0 10px 0 35px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Estilos Navbar Maestría en Ingeniería */
+.navbarMaestria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 64px;
+    background-color: #003366;
+    position: relative;
+    z-index: 999;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 8px 5px;
+    /* Espacio entre cada elemento */
+}
+
+.nav-links a:hover {
+    color: #c0c0c5;
+}
+
+/* Icono de menú */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-icon .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #003366;
+    min-width: 160px;
+    z-index: 1;
+    list-style: none;
+    /* Eliminar viñetas en el dropdown */
+    padding: 0px;
+    /* Eliminar el padding de la lista */
+    margin: 0;
+    /* Eliminar margen */
+    white-space: nowrap;
+    text-align: left;
+
+}
+
+/* Estilo de los elementos dentro del menú desplegable */
+.dropdown-content li {
+    padding: 10px;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    text-emphasis: none;
+}
+
+.dropdown-content li a:hover {
+    color: #c0c0c5;
+}
+
+/* Estilos para el triángulo */
+.dropdown-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    /* Aquí defines el color del triángulo */
+    margin-left: 5px;
+    /* Para separar el triángulo de la palabra */
+    vertical-align: middle;
+}
+
+/* Estilos icon home */
+.linkHome {
+    text-decoration: none;
+    /* Elimina el subrayado */
+    color: white;
+    /* Hace el ícono blanco */
+    display: inline-flex;
+    /* Cambia a inline-flex para controlar mejor el alineamiento */
+    align-items: center;
+    /* Centra el ícono verticalmente */
+    padding: 5px;
+    border: none;
+    /* Asegura que no haya borde */
+    background: none;
+    /* Asegura que no haya fondo */
+}
+
+.linkHome i {
+    font-size: 15px;
+    margin: 0;
+    /* Elimina cualquier margen extra */
+    padding: 0;
+    /* Elimina el padding */
+}
+
+.linkHome:hover {
+    color: #c0c0c5;
+}
+
+li {
+    list-style: none;
+    /* Elimina el marcador predeterminado */
+}
+
+@media(max-width: 768px) {
+    .navbarMaestria {
+        padding: 16px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #003366;
+        text-align: center;
+        transition: heigth 0.5s ease;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        width: 100%;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    #menu-toggle:checked+.menu-icon+.nav-links {
+        height: auto;
+    }
+
+    #menu-toggle:checked+.menu-icon .line:nth-child(1) {
+        transform: rotate(45deg) translate(15px, 3px);
+    }
+
+    #menu-toggle:checked+.menu-icon .line:nth-child(2) {
+        transform: scale(0);
+    }
+
+    #menu-toggle:checked+.menu-icon .line:nth-child(3) {
+        transform: rotate(-45deg) translate(15px, -4px);
+    }
+}
+
+/* Menú desplegable en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* El dropdown se muestra como un menú de bloque en pantallas pequeñas */
+    .dropdown-content {
+        position: static;
+        /* Cambiar la posición del menú desplegable */
+        min-width: 100%;
+        /* Aseguramos que el dropdown ocupe todo el ancho */
+        box-shadow: none;
+        /* Eliminar la sombra */
+        background-color: #003366;
+        /* Mantener el fondo */
+    }
+
+    /* Para que las opciones de dropdown se muestren como bloque en móviles */
+    .dropdown-content li {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        /* Aumentar el tamaño de los enlaces */
+    }
+
+    /* Para el hover en pantallas pequeñas, hacer que el submenú esté visible */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* Menú hamburguesa para pantallas más pequeñas */
+@media (max-width: 480px) {
+    .nav-links {
+        display: none;
+        /* Ocultar el menú por defecto */
+        text-align: center;
+    }
+
+    #menu-toggle:checked+.menu-icon+.nav-links {
+        display: block;
+        /* Mostrar el menú cuando el checkbox esté marcado */
+    }
+
+    .menu-icon {
+        display: block;
+        /* Mostrar el ícono del menú */
+        cursor: pointer;
+    }
+
+    .menu-icon .line {
+        display: block;
+        width: 25px;
+        height: 4px;
+        background-color: #fff;
+        margin: 5px auto;
+    }
+
+    .nav-links li {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        display: block;
+        /* Mostrar el submenú como un bloque */
+    }
+
+    .dropdown-content li {
+        padding: 15px 0;
+        width: 100%;
+    }
+}
+
+
+/* Estilos específicos para pantallas de 550px */
+@media (max-width: 500px) {
+    .navbarMaestria {
+        padding: 12px 16px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #003366;
+        transition: height 0.3s ease;
+        z-index: 1;
+    }
+
+    /* Aquí agregamos la sombra al desplegar el menú */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        height: auto;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra inferior */
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 12px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: #003366;
+        padding: 0;
+    }
+
+    .dropdown-content li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* Icono hamburguesa animado */
+    #menu-toggle:checked + .menu-icon .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #menu-toggle:checked + .menu-icon .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon .line:nth-child(3) {
+        transform: rotate(-45deg) translate(15px, -15px);
+    }
+}
+
+/* Estilos específicos para pantallas de 390px */
+@media (max-width: 390px) {
+    .navbarMaestria {
+        padding: 12px 16px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #003366;
+        transition: height 0.3s ease;
+        z-index: 1;
+    }
+
+    /* Aquí agregamos la sombra al desplegar el menú */
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        height: auto;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra inferior */
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 12px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: block;
+        width: 100%;
+        background-color: #003366;
+        padding: 0;
+    }
+
+    .dropdown-content li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* Icono hamburguesa animado */
+    #menu-toggle:checked + .menu-icon .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    #menu-toggle:checked + .menu-icon .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon .line:nth-child(3) {
+        transform: rotate(-45deg) translate(15px, -15px);
+    }
+}
+
+/* Clase para fijar el navbarMaestria debajo del navbarGobierno */
+.fixed-navbar {
+    position: fixed;
+    top: 70px; 
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+body {
+    padding-top: 80px; 
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Imagen de la Maestría*/
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+}
+
+.about-image img {
+    margin-top: 160px;
+    max-width: 230px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin-left: -808px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #000;
+    margin: 0;
+    text-align: center !important;
+    margin-left: -143px;
+}
+
+.cohorte-generacional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.contenido-cohorte {
+    margin-top: -130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.tabla-imagenes {
+    margin-top: -160px;
+    border-collapse: collapse;
+    width: 65%;
+    max-width: 90%;
+    text-align: center;
+    table-layout: fixed;
+    margin-left: 210px;
+}
+
+.titulo-cohorte {
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
+
+.imagen-cohorte {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.espacio td {
+    height: 70px;
+}
+
+
+/*****************************/
+/******RESPONSIVE DESIGN******/
+/*****************************/
+
+/* Teléfonos medianos (≤ 576px) */
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 1.6rem;
+        margin-left: 10px;
+        margin-bottom: -50px;
+    }
+
+    .contenido-cohorte {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-top: 140px;
+    }
+
+    .about-image img {
+        margin-top: 40px;
+        max-width: 200px; 
+    }
+
+    .tabla-imagenes {
+        margin-left: 0px;
+    }
+}
+
+/* Tablets verticales (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .contenido-cohorte {
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: -50px;
+    }
+
+    .tabla-imagenes {
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+
+    .about-image {
+        margin-top: 140px;
+    }
+
+    .about-image img {
+        margin-top: 40px;
+        max-width: 200px; 
+    }
+}
+
+/* Tablets horizontales / pantallas medianas (≤ 992px) */
+@media screen and (max-width: 992px) {
+    .contenido-cohorte {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: -50px;
+    }
+
+    .about-image {
+        margin-top: 160px;
+    }
+
+    .about-image img {
+        margin-top: 40px;
+        max-width: 200px; 
+    }
+
+    .tabla-imagenes {
+        margin-top: 60px;
+        margin-left: 0px;
+    }
+}
+
+/* Laptops pequeñas (≤ 1200px) */
+@media screen and (max-width: 1200px) {
+    .contenido-cohorte {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: -50px;
+    }
+
+    .about-image {
+        margin-top: 160px;
+    }
+
+    .about-image img {
+        align-items: center !important;
+        margin-top: 40px;
+        max-width: 200px; 
+    }
+
+    .tabla-imagenes {
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 0px;
+        width: 95%;
+    }
+}
+
+/* -------------------- */
+/* Estilos Responsivos */
+/* -------------------- */
+
+/* Tablets (Menos de 1024px) */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        /* Se apila en dispositivos medianos */
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 180px;
+        /* Reduce el tamaño de la imagen */
+        display: block;
+        margin: 0 auto;
+        /* Centra la imagen */
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* Teléfonos (Menos de 768px) */
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 30px 15px;
+        /* Reduce padding lateral */
+    }
+
+    .about-container {
+        text-align: center;
+    }
+
+    .about-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-image img {
+        margin-left: 0;
+        max-width: 150px;
+        /* Imagen más pequeña */
+        display: block;
+        margin: 0 auto;
+        /* Centra la imagen */
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Imagenes (Gráficas) */
+@media (max-width: 768px) {
+    .about-imageGrafica img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Footer Maestría en Ingenieria */
+.footer-maestria {
+    background-color: #003366;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-containerMaestria {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio uniforme entre las secciones */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    /* Añade espacio entre las secciones */
+}
+
+.footer-sectionMaestria {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: left;
+    /* Alinea todo el contenido de la sección hacia la izquierda */
+}
+
+.footer-sectionMaestria:nth-child(2) {
+    flex: 1.2;
+    /* Da más espacio a la sección del medio */
+}
+
+.footer-sectionMaestria:nth-child(3) {
+    flex: 0.5;
+    /* Reduce el tamaño de la última sección */
+    margin-left: auto;
+    /* Empuja la sección hacia la derecha */
+}
+
+.footer-sectionMaestria img.footer-imagen {
+    margin-top: 15px;
+    width: 70%;
+    /* Ajusta la imagen al tamaño de su contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    display: block;
+    /* Asegura que la imagen sea un bloque */
+    margin-left: 0%;
+    /* Mueve la imagen un 10% hacia la izquierda */
+}
+
+.footer-sectionMaestria h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+    /* Alinea el h3 hacia la izquierda */
+}
+
+.footer-sectionMaestria p {
+    margin-bottom: 0px;
+    /* Disminuye el espacio entre los párrafos */
+    text-align: left;
+    line-height: 1.2;
+    /* Ajusta el alto de las líneas dentro del párrafo */
+}
+
+.footer-linkMaestria {
+    color: #fff;
+    /* Color inicial del texto (puedes cambiarlo) */
+    text-decoration: none;
+    /* Elimina el subrayado por defecto */
+}
+
+.footer-linkMaestria:hover {
+    color: #c0c0c5;
+    /* Color del texto cuando el cursor pase sobre el enlace */
+    text-decoration: none;
+    /* Opcional: agrega un subrayado al pasar el cursor */
+}
+
+.footer-sectionMaestria .fa-brands {
+    font-size: 25px;
+    /* Ajusta el tamaño del icono */
+    margin: 0 15px;
+    /* Espacio entre los iconos */
+    transition: transform 0.3s ease;
+    /* Animación al pasar el mouse */
+    margin-bottom: 50px;
+}
+
+.footer-sectionMaestria .fa-brands:hover {
+    transform: scale(1.2);
+    /* Efecto de agrandado al pasar el mouse */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos para la flecha hacia arriba */
+.arrow-up {
+    font-size: 2rem;
+    /* Tamaño más grande */
+    color: white;
+    /* Color blanco */
+    transition: transform 0.3s ease;
+    /* Efecto de transición */
+}
+
+.arrow-up svg {
+    width: 40px;
+    /* Ancho del ícono */
+    height: 40px;
+    /* Altura del ícono */
+    margin-bottom: 20px;
+}
+
+/* Efecto hover para interacción */
+.arrow-up:hover {
+    transform: scale(1.2);
+    /* Escala al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+
+    /* Aplica en pantallas pequeñas como móviles */
+    .footer-containerMaestria {
+        flex-direction: column;
+        /* Apila las secciones una sobre otra */
+        align-items: center;
+        /* Centra las secciones horizontalmente */
+        text-align: center;
+        /* Asegura que el texto también esté centrado */
+    }
+
+    .footer-sectionMaestria {
+        width: 100%;
+        /* Asegura que cada sección ocupe todo el ancho */
+        text-align: center;
+        /* Centra el texto dentro de cada sección */
+    }
+
+    .footer-sectionMaestria h3,
+    .footer-sectionMaestria p {
+        text-align: center;
+        /* Centra los textos de los párrafos y títulos */
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* Footer Gobierno */
+.footer-gobierno {
+    background-color: #611232;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.footer-containerGobierno {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio uniforme entre las secciones */
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    /* Añade espacio entre las secciones */
+}
+
+.footer-sectionGobierno {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: left;
+    /* Alinea todo el contenido de la sección hacia la izquierda */
+}
+
+.footer-sectionGobierno img.footer-imagen {
+    margin-top: 15px;
+    width: 70%;
+    /* Ajusta la imagen al tamaño de su contenedor */
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    display: block;
+    /* Asegura que la imagen sea un bloque */
+    margin-left: 0%;
+    /* Mueve la imagen un 10% hacia la izquierda */
+}
+
+.footer-sectionGobierno h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+    /* Alinea el h3 hacia la izquierda */
+}
+
+.footer-sectionGobierno p {
+    margin-bottom: 0px;
+    /* Disminuye el espacio entre los párrafos */
+    text-align: left;
+    line-height: 1.2;
+    /* Ajusta el alto de las líneas dentro del párrafo */
+}
+
+.footer-link {
+    color: #fff;
+    /* Color inicial del texto (puedes cambiarlo) */
+    text-decoration: none;
+    /* Elimina el subrayado por defecto */
+}
+
+.footer-link:hover {
+    color: #ebdaa9;
+    /* Color del texto cuando el cursor pase sobre el enlace */
+    text-decoration: none;
+    /* Opcional: agrega un subrayado al pasar el cursor */
+}
+
+.footer-sectionGobierno .fa-brands {
+    font-size: 25px;
+    /* Ajusta el tamaño del icono */
+    margin: 0 15px;
+    /* Espacio entre los iconos */
+    transition: transform 0.3s ease;
+    /* Animación al pasar el mouse */
+    margin-bottom: 50px;
+}
+
+.footer-sectionGobierno .fa-brands:hover {
+    transform: scale(1.2);
+    /* Efecto de agrandado al pasar el mouse */
+}
+
+.imagen-debajo-footer {
+    text-align: center;
+    /* Centra la imagen */
+    margin: 0;
+    /* Elimina cualquier margen */
+    padding: 0;
+    /* Elimina cualquier padding */
+}
+
+.imagen-debajo-footer img {
+    display: block;
+    /* Evita el espacio extra que generan los elementos inline */
+    max-width: 100%;
+    /* Asegura que la imagen no se desborde */
+    height: auto;
+    /* Mantiene la proporción */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+@media (max-width: 768px) {
+
+    /* Se activa en dispositivos móviles y tablets */
+    .footer-containerGobierno {
+        flex-direction: column;
+        /* Apila los elementos en una columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+        text-align: center;
+        /* Centra el texto dentro de cada sección */
+    }
+
+    .footer-sectionGobierno {
+        width: 100%;
+        /* Cada sección ocupa el 100% del ancho */
+        text-align: center;
+        /* Centra el contenido */
+    }
+
+    .footer-sectionGobierno h3,
+    .footer-sectionGobierno p {
+        text-align: center;
+        /* Centra títulos y párrafos */
+    }
+
+    .footer-sectionGobierno img.footer-imagen {
+        margin: 0 auto;
+        /* Centra la imagen */
+        display: block;
+        /* Asegura que se comporte como un bloque */
+    }
+}

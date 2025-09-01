@@ -1,0 +1,251 @@
+body {
+  background-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  padding-top: 0px;
+  /* Ajusta este valor según la altura del navbar */
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* Estilos para Requisitos Ingreso */
+
+/* Contenedor para el contenido */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Cambiado de center a flex-start */
+  padding: 50px;
+  background-color: #fff;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 30px;
+  align-items: flex-start;
+  /* Alinea el texto con la parte superior de la imagen */
+}
+
+.about-text {
+  text-align: center;
+  /* Centra el texto */
+  width: 100%;
+  /* Asegura que ocupe todo el ancho disponible */
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text h2 {
+  padding-top: -15px;
+  margin-bottom: 0px;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #000;
+}
+
+.about-text h3 {
+  font-size: 1.2rem;
+}
+
+.about-text h3.centrado {
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.3rem;
+  color: #000;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: -5px;
+}
+
+/*---------------------------------------------------------------------------*/
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.guardar-btn,
+.cancelar-btn,
+.eliminar-btn,
+.editar-btn,
+.añadir-btnSeleccion,
+.añadir-btnRequisito,
+.añadir-btnAntecedentes {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.editar-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.eliminar-btn,
+.cancelar-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.guardar-btn,
+.añadir-btnSeleccion,
+.añadir-btnRequisito,
+.añadir-btnAntecedentes {
+  background-color: #007bff;
+  color: white;
+}
+
+.eliminar-btn:hover,
+.editar-btn:hover,
+.cancelar-btn:hover,
+.guardar-btn:hover,
+.añadir-btnSeleccion:hover,
+.añadir-btnRequisito:hover,
+.añadir-btnAntecedentes:hover {
+  opacity: 0.8;
+}
+
+
+/* Contenedor para input + botones */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 400px;
+  align-items: center;
+}
+
+/* Input estilizado */
+.input-antecedente {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 200%;
+}
+
+.input-antecedenteEdit {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+}
+
+/* Botones: estilo uniforme */
+.guardar-btn,
+.cancelar-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Espaciado entre botones */
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.antecedente-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.antecedente-item .texto {
+  flex: 1;
+  margin: 0;
+}
+
+.antecedente-item .botones button {
+  margin-left: 8px;
+}
+
+.input-seleccionEdit,
+.input-requisitoEdit {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+}
+
+.input-group {
+  margin-top: 10px;
+}
+
+.input-group input {
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 200%;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.guardar-btn,
+.cancelar-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.item-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-contenedor span {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 8px;
+}
+
+.editar-btn,
+.eliminar-btn {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editar-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.eliminar-btn {
+  background-color: #dc3545;
+  color: #fff;
+}

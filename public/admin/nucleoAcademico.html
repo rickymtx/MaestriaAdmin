@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Núcleo Académico Básico | Administrador</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="stylesNucleo.css">
+</head>
+
+<body>
+    <script type="module" src="../config1.js"></script>
+
+    <!-- Núcleo Académico Básico -->
+    <div class="perfil-wrapper">
+        <div class="perfil-container">
+            <h2>Núcleo Académico Básico</h2>
+
+            <table id="tabla1" class="perfil">
+                <tbody></tbody>
+            </table>
+
+            <!-- Botones de acciones -->
+            <div class="actions">
+                <button onclick="añadirProfesor(this)" class="añadir-btnProfesor">Añadir Profesor</button>
+            </div>
+
+            <!-- Sección de Indicaciones para Imagen de Nucleo Basico -->
+            <section class="indicaciones">
+                <h3>Gestión de Imágenes de Núcleo Académico Básico</h3>
+                <ol>
+                    <p>Selecciona una nueva imagen desde tu dispositivo para cada profesor. Se recomienda que las imágenes 
+                        estén en formato <strong>JPG</strong> o <strong>PNG</strong>, con dimensiones ideales de <strong>
+                        300 x 470 pixeles</strong> para una mejor visualización.
+                    </p>
+                </ol>
+            </section>
+        </div>
+    </div>
+    <script src="appNucleo.js"></script>
+
+
+    <!-- Script a la Api -->
+    <script type="module" src="appNucleoAcademico.js"></script>
+
+</body>
+
+</html>

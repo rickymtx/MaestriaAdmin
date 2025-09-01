@@ -1,0 +1,189 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 0px; /* Ajusta este valor según la altura del navbar */
+}
+
+/* Estilos para Sintesis Plan */
+/* Contenedor para el contenido */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Cambiado de center a flex-start */
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    align-items: flex-start; /* Alinea el texto con la parte superior de la imagen */
+}
+
+.about-text {
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Asegura que todo el contenido esté centrado */
+}
+
+.about-text h2 {
+    padding-top: -15px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.about-text h3 {
+    color: #000; /* Color más claro para el subtítulo */
+    margin-top: 30px;
+    margin-bottom: -5px;
+    font-size: 1.3rem;
+}
+
+.about-text p{
+    font-size: 1.3rem;
+    margin-top: -10px;
+    text-align: justify;
+}
+
+/* Diseño para las tablas */
+.study-plan-table {
+    width: 100%;
+    max-width: 900px; /* Limitar el ancho de la tabla */
+    margin: 20px auto; /* Centrar la tabla */
+    border-collapse: collapse;
+}
+
+.study-plan-table th, .study-plan-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000; /* Cambiar a color negro */
+}
+
+.study-plan-table th {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #f2f2f2;
+    color: #000; /* Color más oscuro para el encabezado */
+    font-weight: bold;
+}
+
+.study-plan-table td {
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: #fff;
+}
+
+/*----------------------------------------------------------------*/
+
+.actions {
+    margin-top: 10px;
+}
+
+.save-btnMaestria,
+.edit-btn,
+.delete-btn,
+.añadir-btnOptativas,
+.añadir-btnBasicas,
+.añadir-btnAsignaturas,
+.añadir-btnMaestria {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.save-btnMaestria,
+.añadir-btnOptativas,
+.añadir-btnBasicas,
+.añadir-btnAsignaturas,
+.añadir-btnMaestria {
+    background-color: #007bff;
+    color: white;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    /* alineado a la izquierda */
+    gap: 10px;
+}
+
+.save-btnMaestria:hover,
+.edit-btn:hover,
+.delete-btn:hover,
+.añadir-btnOptativas:hover,
+.añadir-btnBasicas:hover,
+.añadir-btnAsignaturas:hover,
+.añadir-btnMaestria:hover {
+    opacity: 0.8;
+}
+
+.btn-guardar-asignatura,
+.btn-cancelar-asignatura,
+.save-btnSintesis,
+.cancel-btnSintesis {
+    padding: 6px 12px;
+    margin-right: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-guardar-asignatura,
+.save-btnSintesis {
+    background-color: #007bff;
+    color: white;
+}
+
+.cancel-btnSintesis,
+.btn-cancelar-asignatura {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-guardar-asignatura:hover,
+.btn-cancelar-asignatura:hover,
+.cancel-btnSintesis:hover,
+.save-btnSintesis:hover {
+    opacity: 0.8;
+}
+
+.input-amplio {
+  width: 85%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Línea espaciadora */
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    /* Color de la línea */
+    margin: 40px 0px;
+    /* Espaciado arriba y abajo */
+    margin-top: 150px;
+    margin-bottom: 150px;
+}

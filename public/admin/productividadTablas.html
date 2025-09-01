@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productividad | Administrador</title>
+    <link rel="stylesheet" href="stylesProductividadTablas.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <script type="module" src="../config1.js"></script>
+
+    <!-- Productividad Tablas -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Productividad</h2>
+                <h3>Cuerpos Académicos</h3>
+                
+                <!-- Tabla Cuerpos Académicos -->
+                <table id="tabla1" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Cuerpos Académicos</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirCuerpos(this)" class="añadir-btnCuerpos">Añadir Fila</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Tabla Sistema Nacional de Investigadoras e Investigadores -->
+                <h3>Sistema Nacional de Investigadoras e Investigadores</h3>
+                <table id="tabla2" class="study-plan-table snii-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">No. de SNII</th>
+                            <th colspan="2">NIVEL</th>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="editarSistema(this)" class="edit-btnSistema">Editar</button>
+                    <button onclick="guardarEdicionSistema(this)" class="save-btnSistema"
+                        style="display:none;">Guardar</button>
+                    <button onclick="cancelarEdicionSistema(this)" class="cancel-btnSistema"
+                        style="display:none;">Cancelar</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Tabla Perfil Deseable -->
+                <h3>Perfil Deseable</h3>
+                <table id="tabla3" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>No. de Profesores</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button class="edit-btnPerfil" onclick="editarPerfil(this)">Editar</button>
+                    <button class="save-btnPerfil" onclick="guardarPerfil(this)" style="display: none;">Guardar</button>
+                    <button class="cancel-btnPerfil" onclick="cancelarEdicionPerfil(this)"
+                        style="display: none;">Cancelar</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Tabla Otros reconocimientos -->
+                <h3>Otros reconocimientos</h3>
+                <table id="tabla4" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Profesor</th>
+                            <th>Tipo de Reconocimiento</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirReconocimientos(this)" class="añadir-btnOtros">Añadir Fila</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Tabla Convenios Firmados -->
+                <h3>Convenios Firmados</h3>
+                <table id="tabla5" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Empresa/Productor</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button class="edit-btnConvenios" onclick="editarConvenios(this)">Editar</button>
+                    <button class="save-btnConvenios" onclick="guardarConvenios(this)"
+                        style="display: none;">Guardar</button>
+                    <button class="cancel-btnConvenios" onclick="cancelarEdicionConvenios(this)"
+                        style="display: none;">Cancelar</button>
+                </div>
+
+                <div class="separator"></div>
+
+                <!-- Tabla Participación en redes de investigación científica y tecnológica -->
+                <h3>Participación en redes de investigación científica y tecnológica</h3>
+                <table id="tabla6" class="study-plan-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre de la Red</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <!-- Botones de acciones -->
+                <div class="actions">
+                    <button onclick="añadirFilaParticipacion()" class="añadir-btnParti">Añadir Fila</button>
+                </div>
+
+                <div class="separator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script a la Api -->
+    <script type="module" src="appProductividadTablas.js"></script>
+
+</body>
+
+</html>

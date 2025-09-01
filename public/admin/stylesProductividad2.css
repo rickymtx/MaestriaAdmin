@@ -1,0 +1,342 @@
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 0px;
+    /* Ajusta este valor según la altura del navbar */
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* Estilos para tabla Articulos */
+.articulos-container {
+    padding: 20px;
+}
+
+.articulos-tabla {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    margin: 0 auto;
+    /* Esto centra la tabla */
+    margin-top: 35px;
+}
+
+.articulos-container h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -25px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* Centra en caso de que flexbox esté afectando */
+}
+
+.titulo-articulos {
+    color: #b29140;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    margin-bottom: 5px;
+}
+
+.fila-articulo {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fila-articulo:hover {
+    background-color: #ebdaa9;
+}
+
+.titulo-articulo {
+    color: #000;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.descripcion-articulo {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    text-align: justify;
+    margin-top: -7px;
+}
+
+.fila-articulo td {
+    padding: 20px;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+.espacio {
+    height: 20px;
+}
+
+/* Línea espaciadora */
+.separator {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: #ccc !important;
+    margin: 10px 0 !important;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* Estilos para tabla Capitulos */
+.capitulos-container {
+    padding: 20px;
+}
+
+.capitulos-tabla {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    margin: 0 auto;
+    /* Esto centra la tabla */
+    margin-top: 35px;
+}
+
+
+.titulo-capitulos2 {
+    color: #003366;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -25px;
+}
+
+.titulo {
+    margin-bottom: 5px;
+}
+
+.fila-capitulos {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fila-capitulos:hover {
+    background-color: #bdd7ee;
+}
+
+.titulo-capitulos {
+    color: #000;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.descripcion-capitulos {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    text-align: justify;
+    margin-top: -7px;
+}
+
+.fila-capitulos td {
+    padding: 20px;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+.espacio {
+    height: 20px;
+}
+
+/* Línea espaciadora */
+.separator {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: #ccc !important;
+    margin: 10px 0 !important;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* Estilos para tabla proyectos */
+.proyectos-container {
+    padding: 20px;
+}
+
+.proyectos-tabla {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    margin: 0 auto;
+    /* Esto centra la tabla */
+    margin-top: 35px;
+}
+
+
+.titulo-proyectos2 {
+    color: #089949;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -25px;
+}
+
+.titulo {
+    margin-bottom: 5px;
+}
+
+.fila-proyectos {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fila-proyectos:hover {
+    background-color: #c5e0b4;
+}
+
+.titulo-proyectos {
+    color: #000;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.descripcion-proyectos {
+    font-size: 0.9em;
+    color: #666;
+    display: block;
+    text-align: justify;
+    margin-top: -7px;
+}
+
+.fila-proyectos td {
+    padding: 20px;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+.espacio {
+    height: 20px;
+}
+
+/* Línea espaciadora */
+.separator {
+    display: block !important;
+    width: 100% !important;
+    height: 2px !important;
+    background-color: #ccc !important;
+    margin: 10px 0 !important;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/* Sección de Botónes */
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    /* ahora centrado */
+    gap: 10px;
+}
+
+.añadir-btnProyectos4,
+.añadir-btnCapitulos4,
+.añadir-btnArticulos4,
+.añadir-btnProyectos3,
+.añadir-btnCapitulos3,
+.añadir-btnArticulos3,
+.añadir-btnProyectos2,
+.añadir-btnCapitulos2,
+.añadir-btnArticulos2,
+.cancel-btnCapitulos,
+.save-btnCapitulos,
+.delete-btnCapitulos,
+.edit-btnCapitulos,
+.añadir-btnProyectos,
+.save-btnArticulos,
+.añadir-btnCapitulos,
+.cancel-btnArticulos,
+.delete-btnArticulos,
+.edit-btnArticulos,
+.añadir-btnArticulos {
+    padding: 6px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.añadir-btnProyectos4,
+.añadir-btnCapitulos4,
+.añadir-btnArticulos4,
+.añadir-btnProyectos3,
+.añadir-btnCapitulos3,
+.añadir-btnArticulos3,
+.añadir-btnProyectos2,
+.añadir-btnCapitulos2,
+.añadir-btnArticulos2,
+.save-btnCapitulos,
+.añadir-btnProyectos,
+.save-btnArticulos,
+.añadir-btnCapitulos,
+.añadir-btnArticulos {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btnCapitulos,
+.edit-btnArticulos {
+    background-color: #ffc107;
+    color: black;
+}
+
+.cancel-btnCapitulos,
+.delete-btnCapitulos,
+.cancel-btnArticulos,
+.delete-btnArticulos {
+    background-color: #dc3545;
+    color: white;
+}
+
+.añadir-btnProyectos4:hover,
+.añadir-btnCapitulos4:hover,
+.añadir-btnArticulos4:hover,
+.añadir-btnProyectos3:hover,
+.añadir-btnCapitulos3:hover,
+.añadir-btnArticulos3:hover,
+.añadir-btnProyectos2:hover,
+.añadir-btnCapitulos2:hover,
+.añadir-btnArticulos2:hover,
+.cancel-btnCapitulos:hover,
+.save-btnCapitulos:hover,
+.delete-btnCapitulos:hover,
+.edit-btnCapitulos:hover,
+.añadir-btnProyectos:hover,
+.save-btnArticulos:hover,
+.añadir-btnCapitulos:hover,
+.cancel-btnArticulos:hover,
+.delete-btnArticulos:hover,
+.edit-btnArticulos:hover,
+.añadir-btnArticulos:hover {
+    opacity: 0.8;
+}
+
+.input-titulo,
+.input-descripcion,
+.input-url,
+.input-tabla,
+.input-articulo {
+    width: 90%;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.articulos-tabla button {
+    margin-right: 5px;
+    padding: 5px 10px;
+}

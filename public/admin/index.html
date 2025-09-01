@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index | Administrador</title>
+    <link rel="stylesheet" href="stylesIndex.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <script type="module" src="../config1.js"></script>
+    
+    <!-- Portada Maestría en Ingeniería -->
+    <section>
+        <table id="tablaCohorte" class="tabla-imagenes">
+            <thead>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Sección de Indicaciones para Imagen de Portada -->
+    <section class="indicaciones">
+        <h3>Gestión de Imagen Principal</h3>
+        <ol>
+            <p>Selecciona una nueva imagen desde tu dispositivo. Se recomienda que esté en formato <strong>JPG</strong>
+                o
+                <strong>PNG</strong>, y tenga dimensiones de <strong>1600 x 820 pixeles</strong> para una mejor
+                visualización.
+            </p>
+        </ol>
+    </section>
+
+
+    <!-- Línea de separación -->
+    <div class="separatorSecciones"></div>
+
+
+    <!-- Carrusel de imágenes -->
+    <div class="carousel-container">
+        <div class="carousel-slide" id="carousel-slide">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Formulario para Actualizar imágenes -->
+    <!-- Fondo oscuro (opcional pero recomendado para efecto modal) -->
+    <div id="modal-fondo" style="display: none;" class="modal-fondo"></div>
+
+    <!-- Formulario modal -->
+    <div id="formulario-editar-carrusel" class="modal-formulario" style="display: none;">
+        <div class="imagen-preview" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px;">
+            <div>
+                <img id="preview1" src="" alt="Imagen 1" style="width: 200px;">
+                <input type="file" id="inputImagen1" accept="image/*">
+            </div>
+            <div>
+                <img id="preview2" src="" alt="Imagen 2" style="width: 200px;">
+                <input type="file" id="inputImagen2" accept="image/*">
+            </div>
+        </div>
+        <button id="guardarCarrusel" class="btn-guardar">Guardar</button>
+        <button id="cancelarEdicion" class="btn-cancelar">Cancelar</button>
+    </div>
+
+    <!-- Sección de Indicaciones para Imagen de Portada -->
+    <section class="indicaciones">
+        <h3>Gestión de Imágenes Carrusel</h3>
+        <ol>
+            <p>Selecciona una nueva imagen desde tu dispositivo. Se recomienda que esté en formato <strong>JPG</strong>
+                o
+                <strong>PNG</strong>, y tenga dimensiones de <strong>2100 x 370 pixeles</strong> para una mejor
+                visualización.
+            </p>
+            <p>Ten en cuenta que, si se utiliza una imagen con un mayor ancho (más píxeles a lo largo), el carrusel
+                recortará
+                automáticamente los extremos y mostrará únicamente la parte central de la imagen para que se ajuste
+                correctamente al espacio disponible.</p>
+        </ol>
+    </section>
+
+
+    <!-- Línea de separación -->
+    <div class="separatorSecciones"></div>
+
+
+    <!-- Sección galería -->
+    <section>
+        <table id="tablaGaleria" class="tabla-galeria">
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Botones de acciones -->
+    <div class="actions">
+        <button onclick="añadirGaleria(this)" class="añadir-btnGaleria">Añadir Imagen</button>
+    </div>
+
+    <div id="formularioGaleria" style="display:none; margin-top: 20px;">
+        <input type="text" id="tituloInput" placeholder="Título de la imagen" required class="input-galeria"><br><br>
+        <input type="url" id="urlInput" placeholder="Enlace al sitio web" required class="input-galeria"><br><br>
+        <input type="file" id="imagenInput" accept="image/*" style="display:none;" onchange="mostrarVistaPrevia(event)">
+        <button onclick="document.getElementById('imagenInput').click()">Seleccionar Imagen</button><br><br>
+        <img id="vistaPrevia" src="" alt="Vista previa" style="max-width: 200px; display:none;"><br><br>
+        <button onclick="guardarImagen()" class="btn-guardar">Guardar</button>
+        <button onclick="cancelarFormulario()" class="btn-cancelar">Cancelar</button>
+    </div>
+
+    <!-- Sección de Indicaciones para Imagenes de Galería -->
+    <section class="indicaciones">
+        <h3>Gestión de Imágenes</h3>
+        <ol>
+            <p>Selecciona una nueva imagen desde tu dispositivo. Se recomienda que esté en formato <strong>JPG</strong>
+                o
+                <strong>PNG</strong>, con dimensiones ideales de <strong>1800 x 1200 pixeles</strong> para una mejor
+                visualización.
+            </p>
+        </ol>
+    </section>
+
+
+    <!-- Línea de separación -->
+    <div class="separatorSecciones"></div>
+
+
+    <!-- Eventos -->
+    <h2 class="titulo-eventos">Eventos</h2>
+    <section class="eventos">
+        <table id="tabla1" class="tabla-eventos">
+            <thead>
+                <tr>
+                    <td class="fecha"></td>
+                    <td class="titulo"></td>
+                    <td class="lugar"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="descripcion"></td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Botones de acciones -->
+    <div class="actions">
+        <button onclick="añadirEvento(this)" class="añadir-btnEvento">Añadir Evento</button>
+    </div>
+
+    <!-- Script para diseño de Eventos -->
+    <script src="appDiseño.js"></script>
+
+
+    <!-- Línea de separación -->
+    <div class="separatorSecciones"></div>
+
+
+    <!-- Sección Multimedia -->
+    <h2>Multimedia</h2>
+    <div class="container-Podcast">
+        <div class="podcast-section">
+            <h3 class="titulo-P1">Podcasts</h3>
+            <table id="tablaP" class="tabla-podcasts">
+                <thead>
+                    <tr>
+                        <td class="podcast">
+                            <p class="titulo-podcast"></p>
+                            <p></p>
+                        </td>
+
+                        <td class="espacio"></td>
+
+                        <td class="podcast">
+                            <p class="titulo-podcast"></p>
+                            <p></p>
+                        </td>
+                    </tr>
+
+                    <tr class="fila-espaciadora"></tr>
+
+                    <tr>
+                        <td class="podcast">
+                            <p class="titulo-podcast"></p>
+                            <p></p>
+                        </td>
+
+                        <td class="espacio"></td>
+
+                        <td class="podcast">
+                            <p class="titulo-podcast"></p>
+                            <p></p>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Botones de acciones -->
+    <div class="actions">
+        <button onclick="añadirPodcast(this)" class="añadir-btnPodcast">Añadir Podcast</button>
+    </div>
+
+    <!-- Sección de Indicaciones para Podcast -->
+    <section class="indicaciones">
+        <h3>Pasos para subir un nuevo Podcast</h3>
+        <ol>
+            <li>Abre Spotify y accede a la sección de <strong>Podcast</strong>.</li>
+            <li>Ubica el episodio que deseas compartir, haz clic en los tres puntos (<strong>⋮</strong>) y selecciona la
+                opción <strong>“Compartir” → “Insertar episodio”</strong>.</li>
+            <li>En la ventana emergente, marca la casilla <strong>“Mostrar código”</strong> que se encuentra en la parte
+                inferior.</li>
+            <li>Copia el enlace que aparece en el atributo <strong>src</strong> dentro del código embed. Ejemplo:
+                <br><code>https://open.spotify.com/embed/episode/ID_DEL_EPISODIO</code>
+            </li>
+            <li>Dirígete al panel de administración y pega el enlace copiado en el campo correspondiente para añadir un
+                nuevo podcast.</li>
+        </ol>
+    </section>
+
+    <!-- Línea de separación -->
+    <div class="separatorSecciones"></div>
+
+    <!-- Script a la Api -->
+    <script type="module" src="appIndex.js"></script>
+
+</body>
+
+</html>
