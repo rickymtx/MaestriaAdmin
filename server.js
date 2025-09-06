@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(cors({
     credentials: true,
-    origin: ['https://maestria-b40dd.web.app', 'http://localhost:5000','http://localhost:5001', 'http://localhost:5500', 'http://192.168.1.70:5000', 'https://maestriaadmin-production.up.railway.app'],
+    origin: ['https://maestria-b40dd.web.app', 'http://localhost:5000','http://localhost:5001', 'http://localhost:5500', 'http://192.168.1.70:5000', 'https://maestriaadmin-production.up.railway.app', 'http://172.16.175.48:5000'],
     exposedHeaders: ['set-cookie'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
