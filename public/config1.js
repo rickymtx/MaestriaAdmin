@@ -1,3 +1,3 @@
 
-const URL_SERVER = "https://maestriaadmin-production.up.railway.app";
+const URL_SERVER = "https://mingenieriaitd.com/";
 export {URL_SERVER};
