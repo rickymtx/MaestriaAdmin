@@ -1,3 +1,3 @@
 
-const URL_SERVER = "maestriaadmin-production.up.railway.app";
+const URL_SERVER = "https://maestria-b40dd.web.app";
 export {URL_SERVER};
