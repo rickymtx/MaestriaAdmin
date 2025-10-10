@@ -1607,138 +1607,39 @@ body {
 
 /*--------------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilos para presentación de Maestría en Ingeniería */
-/* Contenedor de imagen */
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container img {
-    width: 100%;
-    /* Tamaño de la imagen */
-    height: auto;
-    object-fit: cover;
-    display: block;
-    /* Evita espacios adicionales alrededor de la imagen */
-}
-
-.image-right {
-    width: 100px;
-    max-width: 80%;
-    height: auto;
-    margin-left: -20px;
-    margin-bottom: 60px;
-}
-
-/* Estilos para presentación de Maestría en Ingeniería */
+/*───────────────────────────────*/
+/*  PRESENTACIÓN MAESTRÍA EN INGENIERÍA  */
+/*───────────────────────────────*/
+
+/* Contenedor general de la sección */
 .section-cohorte {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 40px 0;
-    gap: -15px;
+    gap: 20px; /* Reemplaza el gap negativo, mejora compatibilidad */
+    flex-wrap: wrap; /* Evita desbordamientos en pantallas pequeñas */
 }
 
+/* Tabla de imágenes o contenido principal */
 .tabla-imagenes {
     margin-left: 35px;
     border-collapse: collapse;
-    width: 1650%;
-    max-width: 100%;
+    width: 100%; /* Corregido: 1650% era excesivo */
+    max-width: 900px; /* Limita el ancho máximo */
     text-align: center;
     overflow: hidden;
     table-layout: fixed;
 }
 
+/* Título de la sección */
 .titulo-cohorte {
     font-size: 2.1rem;
     padding: 20px 0;
 }
 
+/* Imágenes dentro de celdas */
 .imagen {
     display: block;
     width: 100%;
@@ -1749,15 +1650,59 @@ body {
     border-radius: 20px;
 }
 
-/*--------------------------*/
-/*-----DISEÑO RESPONSIVO----*/
-/*--------------------------*/
+/*───────────────────────────────*/
+/*  CONTENEDOR DE LA IMAGEN DERECHA  */
+/*───────────────────────────────*/
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto; /* Evita que Firefox estire la imagen */
+}
+
+.image-container img {
+    display: block;
+    height: auto;
+    object-fit: contain; /* Mejor compatibilidad que "cover" para logos */
+}
+
+/* Imagen específica a la derecha */
+.image-right {
+    width: clamp(200px, 30vw, 350px); /* Tamaño adaptable y consistente */
+    height: auto;
+    margin-left: -10px;
+    margin-bottom: 40px;
+    max-width: 100%;
+}
+
+/*───────────────────────────────*/
+/*  DISEÑO RESPONSIVO (MÓVIL)   */
+/*───────────────────────────────*/
+
+@media screen and (max-width: 1024px) {
+    .section-cohorte {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .tabla-imagenes {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .image-right {
+        width: clamp(140px, 50vw, 220px);
+        margin: 20px auto;
+        display: block;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .section-cohorte {
         flex-direction: column;
-        /* Coloca la tabla encima de la imagen */
         align-items: center;
+        gap: 10px;
     }
 
     .tabla-imagenes {
@@ -1768,80 +1713,10 @@ body {
 
     .image-right {
         margin-left: 0;
-        max-width: 50%;
-        margin-bottom: 5px;
+        width: clamp(100px, 60vw, 140px);
+        margin: 10px auto;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------------------------------------------*/
 
